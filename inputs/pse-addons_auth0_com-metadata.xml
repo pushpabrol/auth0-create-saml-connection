@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EntitiesDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="INC20161216T195650" Name="urn:mace:incommon" validUntil="2016-12-30T19:56:50Z">
+<EntityDescriptor entityID="urn:pse-addons.auth0.com" xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+  <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <KeyDescriptor use="signing">
+      <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <X509Data>
+          <X509Certificate>MIIC8DCCAdigAwIBAgIJagwRjhaL0xZyMA0GCSqGSIb3DQEBBQUAMB8xHTAbBgNVBAMTFHBzZS1hZGRvbnMuYXV0aDAuY29tMB4XDTE2MDYyMTE1NDgwM1oXDTMwMDIyODE1NDgwM1owHzEdMBsGA1UEAxMUcHNlLWFkZG9ucy5hdXRoMC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCs2y8zMe7TJeNcxDuqwrvQcXsnvVHVHLoP9NUxbub04whQyZyE2PmOj246xJdvrH8WHeRYghqnIqKLr+nfn/ji1T23ZsMI1chxutsW66s2UKnPUIt5zzjNJn9J0ZMdKCTfkyMkbLaHIPBtsE97oD16pR67DbO/tYTAhe6Mg9eQ2LYW3Yof2qSvy1jvFk7GI06JqOjIJcrGs//nXQ3OZXqdr7E6JiMlxvo3PRwz3bP3APGw8h3F0kwfKv98G8KPhkECdxSzefjPCItpqlVwPyZlMiP6bE0C2lGpwENGPKiI7c1fOk2eEG/bV1hA1npdWcCl8RImaZMICyTxUjjuiQK5AgMBAAGjLzAtMAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFGKS93uFObdyzcdHsV2/TB5h8pWcMA0GCSqGSIb3DQEBBQUAA4IBAQBlRPyV4VL8NTG5ClrUJtTH9AhND+HrchKjinvcpCtfykHrLQD/GWGqKNbMev47/qYGBC4GvO+oR6e1ipiLSTZi0NHD51KxEIVQoI3pjKZWMyvOgXuIlOJRuB6/bnHBey5vZvAkXm3H5dkNhfKNxfmqjdN1R1RaZFDLNDWNWw6EXua4ffVsNLBbDCm1X+xJqTvSXA8YxRKNWMABE1FHXo+jXkKiVV7UN/fDX2lIo/BHlbfcdzvfFmpBLq2v+DI8/OBCCgCvj7g5M/8MTEVN2qR4FQkKmF3g9T0ap3e5uQkrK94qfMM7KW/948o9BBuws0plVSdWjP5V4CDkFVgwnaRz</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </KeyDescriptor>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://pse-addons.auth0.com/samlp/UcCu39T3lj6jo3s51BGfu8yJPxlxdjI3/logout"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://pse-addons.auth0.com/samlp/UcCu39T3lj6jo3s51BGfu8yJPxlxdjI3/logout"/>
+    <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+    <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+    <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://pse-addons.auth0.com/samlp/UcCu39T3lj6jo3s51BGfu8yJPxlxdjI3"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://pse-addons.auth0.com/samlp/UcCu39T3lj6jo3s51BGfu8yJPxlxdjI3"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="E-Mail Address" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Given Name" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Name" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Surname" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Name ID" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+  </IDPSSODescriptor>
+</EntityDescriptor>
+</EntitiesDescriptor>
