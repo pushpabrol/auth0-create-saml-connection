@@ -13,7 +13,7 @@ CLIENT_ID=A client_id with create:connections scope grant on the auth0 managemen
 
 CLIENT_SECRET=secret for client above
 
-# Thje IDs of clients in Auth0 that are to be enabled for this connection
+# The IDs of clients in Auth0 that are to be enabled for this connection
 ENABLED_CLIENT_IDs=comma separated list of client_ids that are enabled for this connection
 
 ```
