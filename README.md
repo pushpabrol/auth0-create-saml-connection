@@ -7,7 +7,7 @@
 ## Environment File Contents
 ```
 
-DOMAIN=oidc-tests.auth0.com
+DOMAIN=<your auth0 domain>
 
 CLIENT_ID=A client_id with create:connections scope grant on the auth0 management API
 
